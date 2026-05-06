@@ -1,13 +1,54 @@
-.venv/
+# Python bytecode and caches
 __pycache__/
-*.pyc
-.env
+*.py[cod]
+*$py.class
 .pytest_cache/
-.ruff_cache/
 .mypy_cache/
-dist/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Build and packaging outputs
 build/
+dist/
 *.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Logs and runtime artifacts
+*.log
+logs/
+tmp/
+temp/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep deliverable reports, but ignore generated non-markdown artifacts
 reports/*.json
-reports/*.md
-!.gitkeep
+reports/*.csv
+reports/*.html
