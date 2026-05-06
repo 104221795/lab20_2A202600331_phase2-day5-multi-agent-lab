@@ -5,16 +5,16 @@ lab:
 
 agents:
   supervisor:
-    model: gpt-4o-mini
+    model: gemini-2.5-flash-lite
     temperature: 0.0
   researcher:
-    model: gpt-4o-mini
+    model: gemini-2.5-flash-lite
     temperature: 0.2
   analyst:
-    model: gpt-4o-mini
+    model: gemini-2.5-flash-lite
     temperature: 0.1
   writer:
-    model: gpt-4o-mini
+    model: gemini-2.5-flash-lite
     temperature: 0.4
 
 benchmark:
@@ -22,3 +22,7 @@ benchmark:
     - "Research GraphRAG state-of-the-art and write a 500-word summary"
     - "Compare single-agent and multi-agent workflows for customer support"
     - "Summarize production guardrails for LLM agents"
+
+# Runtime provider configuration is loaded from .env:
+# GEMINI_API_KEY=...
+# GEMINI_MODEL=gemini-2.5-flash-lite
